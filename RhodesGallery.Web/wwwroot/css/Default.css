@@ -1,0 +1,13 @@
+﻿body 
+{
+    background-color: black;
+}
+
+h3
+{
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-variant: small-caps;
+}

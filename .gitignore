@@ -1,6 +1,7 @@
 [Oo]bj/
 [Bb]in/
 TestResults/
+db/
 .nuget/
 .vs/
 _ReSharper.*/
