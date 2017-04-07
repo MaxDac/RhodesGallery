@@ -8,9 +8,16 @@ namespace RhodesGallery.Web.Controllers
 {
     public class DefaultController : Controller
     {
+        [Route("/")]
         public IActionResult Index()
         {
             return View("Index");
+        }
+
+        [Route("/Home")]
+        public IActionResult Home()
+        {
+            return View("Home");
         }
     }
 }

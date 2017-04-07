@@ -1,4 +1,5 @@
 ﻿@{
+    Layout = "~/Views/Shared/_CleanLayout.cshtml";
     ViewData["Title"] = "Rhodes Gallery";
 }
 
@@ -9,5 +10,7 @@
 <h3>Pitu Hermosa</h3>
 
 <div class="centered">
-    <img src="~/images/pen_icon.png" />
+    <a href="@Url.Action("Home", "Default")">
+        <img src="~/images/pen_icon.png" />
+    </a>
 </div>
