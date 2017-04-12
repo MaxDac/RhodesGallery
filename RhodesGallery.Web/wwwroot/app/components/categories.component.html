@@ -1,0 +1,7 @@
+﻿<div class="padded-container">
+    <div class="row row-height" *ngFor="let category of categories">
+        <div class="btn btn-default btn-block" (click)="presentPoems(category.id)">
+            {{ category.name }}
+        </div>
+    </div>
+</div>

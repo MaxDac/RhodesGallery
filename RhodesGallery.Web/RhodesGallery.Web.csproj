@@ -6,36 +6,82 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Resources\**" />
+    <Compile Remove="wwwroot\app\components\carousel\**" />
+    <Compile Remove="wwwroot\js\**" />
+    <Compile Remove="wwwroot\node_modules\**" />
+    <Content Remove="Resources\**" />
+    <Content Remove="wwwroot\app\components\carousel\**" />
+    <Content Remove="wwwroot\js\**" />
+    <Content Remove="wwwroot\node_modules\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <EmbeddedResource Remove="wwwroot\app\components\carousel\**" />
+    <EmbeddedResource Remove="wwwroot\js\**" />
+    <EmbeddedResource Remove="wwwroot\node_modules\**" />
+    <None Remove="Resources\**" />
+    <None Remove="wwwroot\app\components\carousel\**" />
+    <None Remove="wwwroot\js\**" />
+    <None Remove="wwwroot\node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\app\app.component.html" />
+    <Content Include="wwwroot\app\app.component.js" />
+    <Content Include="wwwroot\app\app.component.js.map" />
+    <Content Include="wwwroot\app\app.component.ts" />
+    <Content Include="wwwroot\app\app.module.js" />
+    <Content Include="wwwroot\app\app.module.js.map" />
+    <Content Include="wwwroot\app\app.module.ts" />
+    <Content Include="wwwroot\app\app.routing.ts" />
+    <Content Include="wwwroot\app\base\base.service.ts" />
+    <Content Include="wwwroot\app\components\carousel.component.html" />
+    <Content Include="wwwroot\app\components\carousel.component.js" />
+    <Content Include="wwwroot\app\components\carousel.component.js.map" />
+    <Content Include="wwwroot\app\components\carousel.component.ts" />
+    <Content Include="wwwroot\app\components\categories.component.html" />
+    <Content Include="wwwroot\app\components\categories.component.ts" />
+    <Content Include="wwwroot\app\components\copyright.component.html" />
+    <Content Include="wwwroot\app\components\copyright.component.ts" />
+    <Content Include="wwwroot\app\components\navbar.component.html" />
+    <Content Include="wwwroot\app\components\navbar.component.ts" />
+    <Content Include="wwwroot\app\main.js" />
+    <Content Include="wwwroot\app\main.js.map" />
+    <Content Include="wwwroot\app\main.ts" />
+    <Content Include="wwwroot\app\models\category.ts" />
+    <Content Include="wwwroot\app\models\poem.ts" />
+    <Content Include="wwwroot\app\services\category.service.ts" />
+    <Content Include="wwwroot\app\services\poem.service.ts" />
     <Content Include="wwwroot\css\Default.css" />
     <Content Include="wwwroot\css\Index.css" />
+    <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\package.json" />
+    <Content Include="wwwroot\systemjs-angular-loader.js" />
+    <Content Include="wwwroot\systemjs.config.js" />
     <Content Include="wwwroot\favicon.ico" />
-    <Content Include="wwwroot\images\favicon.png" />
-    <Content Include="wwwroot\images\upper-frame.jpg" />
-    <Content Include="wwwroot\js\Index.js" />
+    <Content Include="wwwroot\tsconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="AngularJS.Core" Version="1.6.2" />
-    <PackageReference Include="bootstrap" Version="3.3.7" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Http" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\images\pen_icon.png" />
+    <None Include="wwwroot\app\app.component.ts" />
+    <None Include="wwwroot\app\app.module.ts" />
+    <None Include="wwwroot\app\main.ts" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RhodesGallery.Fx\RhodesGallery.Fx.csproj" />

@@ -1,0 +1,29 @@
+{
+  "name": "angular-seed",
+  "description": "",
+  "scripts": {
+    "start": "live-server --port=5100"
+  },
+  "dependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "@types/node": "^7.0.12",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.0",
+    "jquery": "^3.2.1",
+    "rxjs": "5.3.0",
+    "systemjs": "^0.19.37",
+    "zone.js": "^0.8.5"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.0"
+  }
+}

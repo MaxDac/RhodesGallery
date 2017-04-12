@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" conten t="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Default.css" />
     <script src="node_modules/typescript/lib/typescript.js"></script>
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
@@ -17,17 +18,9 @@
         });
     </script>
     <link rel="icon" href="/favicon.ico" />
-    @RenderSection("Header", false)
-    <title>@ViewBag.Title</title>
+    <title>Development</title>
 </head>
 <body>
-    <div class="container">
-        <div class="center-block">
-            <img src="~/images/upper-frame.png" class="img-responsive center-block" />
-        </div>
-        <div>
-            @RenderBody()
-        </div>
-    </div>
+    <app></app>
 </body>
 </html>

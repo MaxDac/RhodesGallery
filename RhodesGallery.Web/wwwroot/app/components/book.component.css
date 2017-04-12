@@ -1,0 +1,16 @@
+.book-container { 
+    text-align: center;
+}
+
+.book-image {
+    margin: auto;
+    max-width: 200px;
+    max-height: 280px;
+}
+
+.book-title {
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}

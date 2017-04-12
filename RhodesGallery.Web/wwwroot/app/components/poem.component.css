@@ -1,0 +1,21 @@
+.poem-background {
+    background-image: url('/images/poems-background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 949px;
+}
+
+.poem-title {
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.poem-text {
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-right: 10%;
+    font-size: 12px;
+}
