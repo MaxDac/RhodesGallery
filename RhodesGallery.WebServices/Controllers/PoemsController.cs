@@ -4,8 +4,7 @@ using Newtonsoft.Json;
 using Microsoft.Extensions.Options;
 using System;
 using MongoDB.Bson;
-using RhodesGallery.Fx;
-using RhodesGallery.Fx.Models;
+using RhodesGallery.WebServices.Models;
 
 namespace RhodesGallery.WebServices
 {

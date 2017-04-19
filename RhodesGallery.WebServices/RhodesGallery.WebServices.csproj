@@ -15,13 +15,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.4.3" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RhodesGallery.Fx\RhodesGallery.Fx.csproj" />
   </ItemGroup>
 
 </Project>

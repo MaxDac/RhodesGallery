@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RhodesGallery.Fx
+namespace RhodesGallery.WebServices
 {
     public interface IRepository<T>
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
-using RhodesGallery.Fx;
+using RhodesGallery.WebServices;
 
 namespace RhodesGallery.WebServices
 {

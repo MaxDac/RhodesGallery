@@ -1,4 +1,4 @@
-﻿namespace RhodesGallery.Fx
+﻿namespace RhodesGallery.WebServices
 {
     public class Settings
     {

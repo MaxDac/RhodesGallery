@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RhodesGallery.Fx
+namespace RhodesGallery.WebServices
 {
     public class BaseContext<T> : IRepository<T>
         where T : BaseContext<T>

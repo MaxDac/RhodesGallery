@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace RhodesGallery.Fx.Models
+namespace RhodesGallery.WebServices.Models
 {
     public class Poem : BaseContext<Poem>
     {
@@ -11,12 +11,14 @@ namespace RhodesGallery.Fx.Models
         [BsonElement("text")]
         public string Text { get; set; }
 
-        public Poem() : base()
+        public Poem() 
+            : base()
         {
 
         }
 
-        public Poem(IOptions<Settings> settings) : base(settings)
+        public Poem(IOptions<Settings> settings) 
+            : base(settings)
         {
 
         }

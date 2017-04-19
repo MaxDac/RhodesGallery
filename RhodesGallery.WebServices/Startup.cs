@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using RhodesGallery.Fx;
+using RhodesGallery.WebServices;
 using System;
 
 namespace RhodesGallery.WebServices

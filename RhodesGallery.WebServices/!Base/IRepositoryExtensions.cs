@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace RhodesGallery.Fx
+namespace RhodesGallery.WebServices
 {
     public static class IRepositoryExtensions
     {
@@ -14,8 +14,7 @@ namespace RhodesGallery.Fx
         public static UpdateDefinition<T> GetGenericObjectUpdateById<T>(this IRepository<T> repository, string id, T updateInfo)
             where T : BaseContext<T>
         {
-            var updateDefinition = Builders<T>.Update
-                .CurrentDate(i => i.UpdateTime);
+            var updateDefinition = Builders<T>.Update.CurrentDate(i => i.UpdateTime);
 
             var properties = typeof(T).GetTypeInfo().GetProperties().Where(i => i.Name != nameof(BaseContext<T>.Id) || i.Name != nameof(BaseContext<T>.CreateTime) || i.Name != nameof(BaseContext<T>.UpdateItem));
             foreach (var property in properties)

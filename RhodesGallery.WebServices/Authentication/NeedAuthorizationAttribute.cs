@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace RhodesGallery.Fx
+namespace RhodesGallery.WebServices
 {
     public class NeedAuthorizationAttribute : ActionFilterAttribute, IAuthorizationFilter
     {

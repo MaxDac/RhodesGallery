@@ -83,8 +83,5 @@
     <None Include="wwwroot\app\app.module.ts" />
     <None Include="wwwroot\app\main.ts" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RhodesGallery.Fx\RhodesGallery.Fx.csproj" />
-  </ItemGroup>
 
 </Project>
