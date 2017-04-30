@@ -9,26 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var category_service_1 = require("../services/category.service");
-var CategoriesComponent = (function () {
-    function CategoriesComponent(proxy, router) {
-        this.proxy = proxy;
-        this.router = router;
-        this.categories = proxy.getItems();
+var book_1 = require("../models/book");
+var BookComponent = (function () {
+    function BookComponent() {
     }
-    CategoriesComponent.prototype.presentPoems = function (categoryId) {
-        this.router.navigate(['/poems', categoryId]);
+    BookComponent.prototype.goToAmazonPage = function () {
+        var win = window.open(this.book.bookUrl, '_blank');
+        win.focus();
     };
-    return CategoriesComponent;
+    return BookComponent;
 }());
-CategoriesComponent = __decorate([
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", book_1.default)
+], BookComponent.prototype, "book", void 0);
+BookComponent = __decorate([
     core_1.Component({
-        selector: 'categories',
-        templateUrl: './categories.component.html'
+        selector: 'book',
+        templateUrl: './book.component.html',
+        styleUrls: ['./book.component.css']
     }),
-    __metadata("design:paramtypes", [category_service_1.default, router_1.Router])
-], CategoriesComponent);
+    __metadata("design:paramtypes", [])
+], BookComponent);
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = CategoriesComponent;
-//# sourceMappingURL=categories.component.js.map
+exports.default = BookComponent;
+//# sourceMappingURL=book.component.js.map

@@ -9,26 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var category_service_1 = require("../services/category.service");
-var CategoriesComponent = (function () {
-    function CategoriesComponent(proxy, router) {
+var biography_service_1 = require("../services/biography.service");
+var BiographyComponent = (function () {
+    function BiographyComponent(proxy) {
         this.proxy = proxy;
-        this.router = router;
-        this.categories = proxy.getItems();
+        this.biography = proxy.getBiography();
     }
-    CategoriesComponent.prototype.presentPoems = function (categoryId) {
-        this.router.navigate(['/poems', categoryId]);
-    };
-    return CategoriesComponent;
+    return BiographyComponent;
 }());
-CategoriesComponent = __decorate([
+BiographyComponent = __decorate([
     core_1.Component({
-        selector: 'categories',
-        templateUrl: './categories.component.html'
+        selector: 'biography',
+        templateUrl: './biography.component.html'
     }),
-    __metadata("design:paramtypes", [category_service_1.default, router_1.Router])
-], CategoriesComponent);
+    __metadata("design:paramtypes", [biography_service_1.default])
+], BiographyComponent);
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = CategoriesComponent;
-//# sourceMappingURL=categories.component.js.map
+exports.default = BiographyComponent;
+//# sourceMappingURL=biography.component.js.map

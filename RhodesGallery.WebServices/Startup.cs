@@ -34,11 +34,14 @@ namespace RhodesGallery.WebServices
                 options.CookieHttpOnly = true;
             });
 
-            services.Configure<Settings>(options =>
-            {
-                options.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
-                options.Database = Configuration.GetSection("MongoConnection:Database").Value;
-            });
+            // Using app configuration to populate the db settings class.
+            //services.Configure<DbSettings>(config =>
+            //{
+            //    config.ConnectionString = this.Configuration.GetSection("DbSettings:ConnectionString").Value;
+            //    config.DatabaseName = this.Configuration.GetSection("DbSettings:ConnectionString").Value;
+            //});
+            DbSettings.ConnectionString = this.Configuration.GetSection("DbSettings:ConnectionString").Value;
+            DbSettings.DatabaseName = this.Configuration.GetSection("DbSettings:DatabaseName").Value;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +50,10 @@ namespace RhodesGallery.WebServices
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseSession().UseMvc();
+            app
+                .UseExceptionHandler()
+                .UseSession()
+                .UseMvc();
         }
     }
 }

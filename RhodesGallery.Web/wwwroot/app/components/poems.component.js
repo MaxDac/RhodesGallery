@@ -10,25 +10,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var category_service_1 = require("../services/category.service");
-var CategoriesComponent = (function () {
-    function CategoriesComponent(proxy, router) {
+var poem_service_1 = require("../services/poem.service");
+var PoemsComponent = (function () {
+    function PoemsComponent(proxy, route, router) {
         this.proxy = proxy;
+        this.route = route;
         this.router = router;
-        this.categories = proxy.getItems();
+        var categoryId = parseInt(route.snapshot.params['id']);
+        if (categoryId)
+            this.poems = proxy.getByCategoryId(categoryId);
     }
-    CategoriesComponent.prototype.presentPoems = function (categoryId) {
-        this.router.navigate(['/poems', categoryId]);
+    PoemsComponent.prototype.goToPoem = function (poemId) {
+        this.router.navigate(['/poem', poemId]);
     };
-    return CategoriesComponent;
+    return PoemsComponent;
 }());
-CategoriesComponent = __decorate([
+PoemsComponent = __decorate([
     core_1.Component({
-        selector: 'categories',
-        templateUrl: './categories.component.html'
+        selector: 'poems',
+        templateUrl: './poems.component.html'
     }),
-    __metadata("design:paramtypes", [category_service_1.default, router_1.Router])
-], CategoriesComponent);
+    __metadata("design:paramtypes", [poem_service_1.default, router_1.ActivatedRoute, router_1.Router])
+], PoemsComponent);
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = CategoriesComponent;
-//# sourceMappingURL=categories.component.js.map
+exports.default = PoemsComponent;
+//# sourceMappingURL=poems.component.js.map

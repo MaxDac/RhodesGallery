@@ -20,6 +20,9 @@ var PoemService = (function (_super) {
     PoemService.prototype.getItems = function () {
         return poems;
     };
+    PoemService.prototype.getByCategoryId = function (categoryId) {
+        return poems.filter(function (p) { return p.categoryId === categoryId; });
+    };
     PoemService.prototype.getItemById = function (id) {
         return poems.find(function (c) { return c.id === id; });
     };

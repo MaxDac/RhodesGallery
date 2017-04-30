@@ -13,52 +13,48 @@ namespace RhodesGallery.WebServices
     {
         static ObjectId SelectedId { get; set; }
 
-        public PoemsController(IOptions<Settings> settings) : base(settings)
-        {
-        }
-
         // GET api/values
-        [HttpGet]
-        public string Get()
-        {
-            //Inserting the casual id
-            try
-            {
-                var rawId = new byte[12];
-                new Random().NextBytes(rawId);
-                var id = new ObjectId(rawId);
-                new Poem(this.Settings).AddItem(new Poem
-                {
-                    Id = id,
-                    CreateTime = DateTime.Now,
-                    UpdateTime = DateTime.Now,
-                    Title = "This is a test title",
-                    Text = "This is a try text"
-                });
+        //[HttpGet]
+        //public string Get()
+        //{
+        //    //Inserting the casual id
+        //    try
+        //    {
+        //        var rawId = new byte[12];
+        //        new Random().NextBytes(rawId);
+        //        var id = new ObjectId(rawId);
+        //        new Poem(this.Settings).AddItem(new Poem
+        //        {
+        //            Id = id,
+        //            CreateTime = DateTime.Now,
+        //            UpdateTime = DateTime.Now,
+        //            Title = "This is a test title",
+        //            Text = "This is a try text"
+        //        });
 
-                return "OK";
-            }
-            catch (Exception ex)
-            {
-                return string.Format("An exception occoured: {0}.", ex);
-            }
-        }
+        //        return "OK";
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return string.Format("An exception occoured: {0}.", ex);
+        //    }
+        //}
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(string id)
-        {
-            try
-            {
-                var decodedId = new ObjectId(id);
-                var item = new Poem(this.Settings).GetItem(id);
-                return JsonConvert.SerializeObject(item);
-            }
-            catch (Exception ex)
-            {
-                return string.Format("An error occoured: {0}.", ex);
-            }
-        }
+        //// GET api/values/5
+        //[HttpGet("{id}")]
+        //public string Get(string id)
+        //{
+        //    try
+        //    {
+        //        var decodedId = new ObjectId(id);
+        //        var item = new Poem(this.Settings).GetItem(id);
+        //        return JsonConvert.SerializeObject(item);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return string.Format("An error occoured: {0}.", ex);
+        //    }
+        //}
 
         // POST api/values
         [HttpPost]

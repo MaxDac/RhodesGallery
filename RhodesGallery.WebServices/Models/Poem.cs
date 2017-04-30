@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace RhodesGallery.WebServices.Models
 {
-    public class Poem : BaseContext<Poem>
+    public class Poem : BaseModel<Poem>
     {
         [BsonElement("title")]
         public string Title { get; set; }
@@ -13,12 +13,6 @@ namespace RhodesGallery.WebServices.Models
 
         public Poem() 
             : base()
-        {
-
-        }
-
-        public Poem(IOptions<Settings> settings) 
-            : base(settings)
         {
 
         }

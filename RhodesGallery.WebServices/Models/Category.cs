@@ -3,19 +3,10 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace RhodesGallery.WebServices.Models
 {
-    public class Category : BaseContext<Poem>
+    public class Category : BaseModel<Category>, IGetModel<Category>, ISetModel<Category>, IDeleteModel<Category>
     {
-        [BsonElement("name")]
-        public string Name { get; set; }
-
         public Category() 
             : base()
-        {
-
-        }
-
-        public Category(IOptions<Settings> settings) 
-            : base(settings)
         {
 
         }

@@ -31,9 +31,9 @@ CategoryService = __decorate([
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = CategoryService;
 var categories = [
-    { id: 1, name: 'First' },
-    { id: 2, name: 'Second' },
-    { id: 3, name: 'Third' },
-    { id: 4, name: 'Fourth' }
+    { id: 1, name: 'Primi componimenti' },
+    { id: 2, name: 'Età adulta' },
+    { id: 3, name: 'Pitu linda' },
+    { id: 4, name: 'Pitu hermosa' }
 ];
 //# sourceMappingURL=category.service.js.map

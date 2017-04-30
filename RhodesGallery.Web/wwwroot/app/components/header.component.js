@@ -6,18 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var CopyrightComponent = (function () {
-    function CopyrightComponent() {
+var HeaderComponent = (function () {
+    function HeaderComponent() {
     }
-    return CopyrightComponent;
+    return HeaderComponent;
 }());
-CopyrightComponent = __decorate([
+HeaderComponent = __decorate([
     core_1.Component({
-        selector: 'home-copyright',
-        templateUrl: './copyright.component.html',
-        styleUrls: ['./copyright.component.css']
+        selector: 'header',
+        templateUrl: './header.component.html'
     })
-], CopyrightComponent);
+], HeaderComponent);
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = CopyrightComponent;
-//# sourceMappingURL=copyright.component.js.map
+exports.default = HeaderComponent;
+//# sourceMappingURL=header.component.js.map
